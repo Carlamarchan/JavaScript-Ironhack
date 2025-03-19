@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    background-color: rgb(127, 134, 132);
+    width: 70%;
+    height: 800px;
+    padding: 25px;
+    color: white;
+}
+.container h1{
+    margin-bottom: 60px;
+}
+.entrada {
+    color: aqua;
+    font-size: 25px;
+}
+#azul{
+    color: rgb(70, 7, 189);
+}
+
+#verde{
+    color: rgb(0, 255, 76);
+}
+
+#rojo{
+    color: rgb(167, 19, 19);
+}
+
+#amarillo{
+    color: rgb(246, 250, 0);
+}
+
+#morado{
+    color: rgb(132, 12, 143);
+}
+
+#noColor{
+    color: black;
+}
+
+#bombilla{
+    color: rgb(102, 37, 86);
+}
