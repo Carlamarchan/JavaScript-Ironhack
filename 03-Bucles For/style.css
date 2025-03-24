@@ -1,0 +1,14 @@
+body {
+  display: flex;
+}
+.titulo{
+    text-align: center;
+}
+.container {
+  padding-left: 50px;
+  width: 60%;
+  margin: auto;
+  background-color: rgb(7, 119, 119);
+  color: white;
+  line-height: 19px;
+}
