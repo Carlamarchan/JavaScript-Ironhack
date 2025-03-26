@@ -1,4 +1,4 @@
-/*//1. EJERCICIO DE INTERCAMBIO DE VALORES EN DOS VARIABLES
+//1. EJERCICIO DE INTERCAMBIO DE VALORES EN DOS VARIABLES
 document.writeln(`<h2> Intercambio de valores en 2 variables </h2>`);
 let variable1 = prompt("Ingrese el nombre de la primera persona");
 let variable2 = prompt("Ingrese el nombre de la segunda persona");
@@ -16,7 +16,7 @@ document.writeln(`La primera persona es ${variable1} <br>`);
 document.writeln(`La segunda persona es ${variable2} <br>`);
 document.writeln(
   `<p> En Barcelona está ${variable1}, y en Tarragona está ${variable2} <p> <br>`
-);*/
+);
 
 //2. BUFFET LIBRE RESTAURANTE
 document.writeln(`<h2> Buffet Libre Restaurante </h2> `);
