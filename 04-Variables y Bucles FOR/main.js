@@ -1,14 +1,12 @@
-//1. EJERCICIO DE INTERCAMBIO DE VALORES EN DOS VARIABLES
-document.writeln(
-  `<h2> Intercambio de valores en 2 variables </h2>`
-);
+/*//1. EJERCICIO DE INTERCAMBIO DE VALORES EN DOS VARIABLES
+document.writeln(`<h2> Intercambio de valores en 2 variables </h2>`);
 let variable1 = prompt("Ingrese el nombre de la primera persona");
 let variable2 = prompt("Ingrese el nombre de la segunda persona");
 let variable3 = "";
 document.writeln(`La primera persona es ${variable1} <br>`);
 document.writeln(`La segunda persona es ${variable2} <br>`);
 document.writeln(
-  `En Barcelona está ${variable1}, y en Tarragona está ${variable2} <br>`
+  `<p> En Barcelona está ${variable1}, y en Tarragona está ${variable2} </p> <br>`
 );
 variable3 = variable1;
 variable1 = variable2;
@@ -17,8 +15,8 @@ document.writeln(`Luego del cambio de variables, tenemos: <br>`);
 document.writeln(`La primera persona es ${variable1} <br>`);
 document.writeln(`La segunda persona es ${variable2} <br>`);
 document.writeln(
-  `En Barcelona está ${variable1}, y en Tarragona está ${variable2} <br>`
-);
+  `<p> En Barcelona está ${variable1}, y en Tarragona está ${variable2} <p> <br>`
+);*/
 
 //2. BUFFET LIBRE RESTAURANTE
 document.writeln(`<h2> Buffet Libre Restaurante </h2> `);
@@ -29,7 +27,7 @@ for (let i = 0; i < totalPlatos; i++) {
   let plato = prompt(`Qué plato vas a ordenar?`);
   document.writeln(`Has ordenado ${plato} <br>`);
   if (i == 4) {
-    document.writeln(`Vas a reventar!! <br>`);
+    document.writeln(`<p> Vas a reventar!! </p>`);
   }
 }
 
