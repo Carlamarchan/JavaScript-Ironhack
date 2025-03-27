@@ -1,0 +1,25 @@
+body {
+    display: flex;
+  }
+  .titulo{
+      text-align: center;
+  }
+  .container {
+    padding-left: 50px;
+    width: 60%;
+    margin: auto;
+    background-color: rgb(23, 93, 105);
+    color: white;
+    line-height: 19px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h2{
+    font-size: 22px;
+  }
+
+  .botones{
+    text-align: center;
+    justify-content: space-between;
+  }
