@@ -25,6 +25,5 @@ function llenarTicket() {
   puntajeRespuesta.innerHTML = puntaje.value;
   asientoRespuesta.innerHTML = asiento.value;
   document.getElementById("ticket").style.display = "block";
-  document.getElementById("ticket").focus();
 }
 
