@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+}
+.container {
+  background-color: rgb(178, 182, 182);
+  width: 1200px;
+  margin: auto;
+}
+h1 {
+  color: rgb(255, 255, 255);
+}
+h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.cabecera {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.formulario {
+  background-color: rgb(35, 39, 54);
+  width: 600px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+fieldset {
+  color: rgb(187, 182, 182);
+}
+label {
+  color: white;
+  font-size: 18px;
+}
+input {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+button {
+  margin-top: 10px;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+}
+#respuestaPeso {
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  background-color: rgb(35, 39, 54);
+  width: 600px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.tituloTicket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.formularioTicket {
+  display: flex;
+  justify-content: center;
+}
+.imagenTicket {
+  display: flex;
+  justify-content: center;
+  width: 83%;
+  background-image: url(images/ticket.jpeg);
+  height: 400px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
+
+.ticket {
+  background-color: rgb(178, 182, 182);
+  width: 83%;
+  margin: auto;
+  justify-content: center;
+}
+.tituloTicket {
+  background-color: rgb(178, 182, 182);
+  height: 100px;
+  margin: 0px;
+  border-radius: 20px;
+}
+.ticketContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-image: url(images/ticket.jpeg);
+}
+.fila1 {
+  height: 100px;
+  margin: 2px;
+  margin-left: 150px;
+  margin-right: 95px;
+}
+.fila2 {
+    width: 40%;
+    height: 110px;
+    margin: 2px;
+    margin-left: 300px;
+    margin-right: 95px;
+  }
+  .textoFila2{
+    height: 40px;
+    margin-top: 66px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .fila3 {
+    height: 100px;
+    margin: 2px;
+    margin-left: 150px;
+    margin-right: 95px;
+  }
+  .fila4 {
+    width: 40%;
+    height: 100px;
+    margin: 2px;
+    margin-left: 300px;
+    margin-right: 95px;
+  }
+  .textoFila4{
+    height: 40px;
+    margin-top: 45px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .fila5 {
+    height: 100px;
+    margin: 2px;
+    margin-left: 150px;
+    margin-right: 95px;
+  }
+  .fila6 {
+    width: 40%;
+    height: 100px;
+    margin: 2px;
+    margin-left: 300px;
+    margin-right: 95px;
+  }
+  .textoFila6{
+    height: 40px;
+    margin-top: 35px;
+    text-align: center;
+    font-size: 25px;
+  }

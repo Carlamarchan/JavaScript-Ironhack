@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactuar con el DOM</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titulo"><h1>Interactuando con el DOM...!!</h1></div>
+
+      <div class="formulario">
+        <form action="#">
+          <div class="cabecera">
+            <h2>Cálculo del peso ideal</h2>
+          </div>
+          <fieldset>
+            <legend>&nbsp; Información personal: &nbsp;</legend>
+            <label for="altura"> Ingresa tu estatura: </label><br />
+            <input
+              type="number"
+              step="0.01"
+              id="altura"
+              placeholder="Altura en metros"
+            /><br />
+            <label for="peso"> Ingresa tu peso: </label><br />
+            <input
+              type="number"
+              step="0.01"
+              id="peso"
+              placeholder="Peso en Kilogramos"
+            /><br />
+          </fieldset>
+
+          <div class="boton">
+            <button onclick="calcular()">Calcular peso Ideal</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="respuestaPeso">
+        ¿Estarás dentro de un peso normal? Prueba a averiguarlo!!
+      </div>
+
+      <div class="formulario">
+        <form action="#">
+          <div class="cabecera">
+            <h2>Rellena la información para calificar la peli</h2>
+          </div>
+          <fieldset>
+            <legend>&nbsp; Puntua tu experiencia!!: &nbsp;</legend>
+            <label for="fecha"> Ingresa la fecha y hora de la peli: </label
+            ><br />
+            <input
+              type="text"
+              id="fecha"
+              placeholder="Ejemplo: 05/03/2025 15:00"
+            /><br />
+            <label for="puntaje"> Ingresa la puntuación para la peli: </label
+            ><br />
+            <input
+              type="number"
+              id="puntaje"
+              placeholder="Ejemplo: 5/5"
+            /><br />
+            <label for="asiento"> Ingresa tu asiento: </label><br />
+            <input type="text" id="asiento" placeholder="Ejemplo 25A" /><br />
+          </fieldset>
+
+          <div class="boton">
+            <button onclick="llenarTicket()" id="botonTicket"> <a href="#ticket" >LlenarTicket</a>  </button>
+          </div>
+        </form>
+      </div>
+      <div class="ticket" style="display: none" id="ticket">
+        <div class="tituloTicket"><h2>Ticket impreso!!!</h2></div>
+        <div class="ticketContainer">
+          <div class="fila1"></div>
+          <div class="fila2" id="fila2">
+            <div class="textoFila2" id="textoFila2"></div>
+          </div>
+          <div class="fila3"></div>
+          <div class="fila4" id="fila4">
+            <div class="textoFila4" id="textoFila4"></div>
+          </div>
+          <div class="fila5"></div>
+          <div class="fila6" id="fila6">
+            <div class="textoFila6" id="textoFila6"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
