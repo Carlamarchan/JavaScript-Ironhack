@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mascotas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="encabezado">
+        <div class="tituloEinput">
+          <h1 id="titulo">Con qué animal te identificas?</h1>
+          <br />
+          <label id="label"> Selecciona la mascota a ser mostrada: </label
+          ><br />
+          <br />
+        </div>
+
+        <div class="formualario">
+          <fieldset>
+            <legend>&nbsp; Mascotas:</legend>
+            <div class="animal">
+              <input type="radio" id="perro" value="perro" name="animal" />
+              <label for="perro">Perro</label>
+            </div>
+            <div class="animal">
+              <input type="radio" id="gato" value="gato" name="animal" />
+              <label for="gato">Gato</label>
+            </div>
+            <div class="animal">
+              <input type="radio" id="loro" value="camello" name="animal" />
+              <label for="loro">Camello</label>
+            </div>
+            <div class="animal">
+              <input type="radio" id="caballo" value="caballo" name="animal" />
+              <label for="caballo">Caballo</label>
+            </div>
+            <div class="animal">
+              <input
+                type="radio"
+                id="cocodrilo"
+                value="cocodrilo"
+                name="animal"
+              />
+              <label for="cocodrilo">Cocodrilo</label>
+            </div>
+            <div class="animal">
+              <input type="radio" id="leon" value="leon" name="animal" />
+              <label for="leon">León</label>
+            </div>
+          </fieldset>
+          <br />
+        </div>
+        <div class="boton">
+          <button onclick="mostrarAnimal()" id="boton">Enviar</button>
+        </div>
+      </div>
+
+      <div class="respuesta">
+        <br />
+
+        <div id="resultado"></div>
+        <div id="imagen"></div>
+        <br />
+      </div>
+
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

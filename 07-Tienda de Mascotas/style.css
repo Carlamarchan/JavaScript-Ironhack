@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+}
+body {
+  display: flex;
+}
+.encabezado {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.tituloEinput {
+  width: 80%;
+  margin: auto;
+}
+.tituloEinput label {
+  font-size: 20px;
+  font-style: oblique;
+}
+.tituloEinput h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: rgba(255, 133, 102, 255);
+}
+.formualario {
+  display: flex;
+}
+.container {
+  background-image: url(images/image.jpg);
+  padding: 40px;
+  width: 60%;
+  background-color: white;
+  margin: auto;
+}
+fieldset {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+.boton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.respuesta {
+  border-radius: 20px;
+  height: 700px;
+  display: flex;
+  margin: auto;
+  width: 65%;
+  text-align: center;
+  background-image: url(images/imagen_fondo.jpg);
+}
+.animal {
+  width: 120px;
+}
+#resultado {
+  width: 250px;
+  height: 350px;
+  margin-top: 230px;
+  margin-left: 25px;
+}
+#imagen {
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 89px;
+  width: 322px;
+  height: 520px;
+  background-image: url(images/todos.jpeg);
+  background-position: center;
+  background-repeat: cover;
+  background-repeat: no-repeat;
+}
