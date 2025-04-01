@@ -1,0 +1,65 @@
+.ejercicio1 {
+  width: 70%;
+  background-color: rgb(107, 131, 141);
+  margin: auto;
+  padding: 30px;
+}
+.titulo {
+  color: white;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+}
+.figuras {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rectangulo {
+  width: 30%;
+  height: 300px;
+  background-color: white;
+}
+.circulo {
+  width: 30%;
+  height: 400px;
+  background-color: white;
+  border-radius: 50%;
+}
+.botones {
+  margin: auto;
+  width: 94%;
+  display: flex;
+  justify-content: space-around;
+}
+#boton1:hover {
+  background-color: red;
+}
+#boton2:hover {
+  background-color: green;
+}
+#boton3:hover {
+  background-color: blue;
+}
+#boton4:hover {
+  background-color: rgb(168, 216, 45);
+}
+
+.ejercicio2 {
+  text-align: center;
+  color: white;
+  width: 70%;
+  background-color: rgb(107, 131, 141);
+  margin: auto;
+  padding: 30px;
+}
+.mensaje {
+  color: rgb(107, 131, 141);
+}
+.color {
+  color: rgb(180, 211, 102);
+}
+.size {
+  font-size: 20px;
+}
