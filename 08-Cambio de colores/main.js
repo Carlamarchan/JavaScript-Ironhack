@@ -20,3 +20,7 @@ function descubre() {
   mensaje.add("color");
   mensaje.add("size");
 }
+
+function limpiar(){
+  window.location.reload();
+}
