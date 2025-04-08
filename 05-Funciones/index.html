@@ -16,6 +16,36 @@
         <button type="button" onclick="ejercicio2()">Ejercicio 2</button>
         <button type="button" onclick="ejercicio3()">Ejercicio 3</button>
       </div>
+      <div class="ejercicio 2">
+        <label for="fname">Ingrese el número secreto:</label><br />
+        <input type="text" id="secreto" name="secreto" required /><br />
+        <label for="lname">Ingrese el número de intentos que desea tener:</label
+        ><br />
+        <input
+          type="number"
+          id="totalIntentos"
+          name="totalIntentos"
+          required
+        /><br />
+        <form action="#">
+          <label for="lname">Adivina el número:</label><br />
+          <input type="number" id="intento" name="intento" required />
+          <input type="button" value="Enviar" onclick="realizarIntento()" />
+        </form>
+        <div>
+          <div class="respuesta">
+            <div class="texto">
+              <p>Intentos anteriores:</p>
+            </div>
+            <div class="intentos">
+              <p id="intentosAnteriores"></p>
+            </div>
+          </div>
+          <div class="pistas">
+            <p id="pista"></p>
+          </div>
+        </div>
+      </div>
       <script src="main.js"></script>
       <br />
       <br />

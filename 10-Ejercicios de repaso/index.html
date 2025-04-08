@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicios de repaso</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ejercicios de repaso</h1>
+      <div class="ejercicio" id="ej1">
+        <div class="infoEj1">
+          <h3>Stock de Papá Noel</h3>
+          <p id="totalRegalos">Quedan 500 regalos!</p>
+        </div>
+        <div class="boton">
+          <button onclick="ejercicio1()">¿Cuántos regalos quedan?</button>
+        </div>
+      </div>
+      <div class="ejercicio" id="ej2">
+        <div class="infoEj1">
+          <h3>Mueble a escoger!</h3>
+          <p id="mueble">Qué mueble vas a llevarte a casa?</p>
+        </div>
+        <div class="boton">
+          <button onclick="ejercicio2()">¿Cuál te gustó más?</button>
+        </div>
+      </div>
+      <div class="ejercicio" id="ej3">
+        <div class="infoEj3">
+          <div class="tituloTabla"><h3>Tablas de multiplicar!</h3></div>
+          <div class="divXTabla">
+            <p id="tabla"></p>
+          </div>
+        </div>
+        <div class="boton">
+          <button onclick="ejercicio3()">
+            ¿Cuántas tablas de multiplicar quieres?
+          </button>
+        </div>
+      </div>
+      <div class="ejercicio4" id="ej4">
+        <div class="infoEj4">
+          <div class="titulo"><h3>DOM LOCO!</h3></div>
+          <br />
+          <div class="seccionesDimLoco">
+            <div class="grupo1">
+              <div class="seccion">
+                <div class="person">
+                  <fieldset>
+                    <legend>&nbsp;Selecciona un personaje:</legend>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/shrek.avif"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/coco.avif"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/muasa.png"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="formulario">
+                <input type="radio" name="personaje" value="Shrek" />
+                <input type="radio" name="personaje" value="Miguel" />
+                <input type="radio" name="personaje" value="Mufasa" />
+              </div>
+            </div>
+
+            <div class="grupo3">
+              <div class="seccion">
+                <div class="person">
+                  <fieldset>
+                    <legend>&nbsp;Selecciona tu estado de ánimo:</legend>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/emoji (1).png"
+                        alt=""
+                        width="100px"
+                        height="100px"
+                      />
+                    </div>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/happy-face.png"
+                        alt=""
+                        width="100px"
+                        height="100px"
+                      />
+                    </div>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/emoji.png"
+                        alt=""
+                        width="100px"
+                        height="100px"
+                      />
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="formulario">
+                <input type="radio" name="animo" value="enamorado" />
+                <input type="radio" name="animo" value="feliz" />
+                <input type="radio" name="animo" value="triste" />
+              </div>
+            </div>
+            <div class="grupo2">
+              <div class="seccion">
+                <div class="person">
+                  <fieldset>
+                    <legend>&nbsp;Selecciona un lugar:</legend>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/volvan.avif"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/selva.avif"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                    <div class="personajeDiv">
+                      <img
+                        src="images/playa.avif"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="formulario">
+                <input type="radio" name="lugar" value=" cerca de un volcan" />
+                <input type="radio" name="lugar" value=" en la selva" />
+                <input type="radio" name="lugar" value=" en la playa" />
+              </div>
+            </div>
+            <br /><br />
+            <button onclick="descubreFrase()">Descubre la frase!</button><br />
+            <br />
+            <div id="respuesta"></div>
+            <br />
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
