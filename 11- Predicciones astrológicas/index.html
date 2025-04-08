@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ejercicios while</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ejercicio1">
+        <div class="elementos">
+          <h1><br>1-- PREDICCIONES SWITCH</h1><br>
+          <input
+            type="text"
+            placeholder="Ingresa tu signo zodiacal"
+            id="signo"
+          />
+          <button id="boton1" onclick="suerte()">Cómo irá tu semana???</button>
+          <div><br><p id="suerteRespuesta"></p></div>
+        </div>
+      </div>
+      <div class="ejercicio2">
+        <div class="elementos">
+          <h1><br>2-- ADIVINA EL NÚMERO</h1><br>
+          <input
+            type="text"
+            placeholder="Rango: 1 y 20 incluidos"
+            id="number"
+          />
+          <button id="boton1" onclick="ejercicio2()">Adivina el número!</button>
+          <div><br><p id="intentosPrevios">Intentos previos: </p><br></div>
+          <div><p id="numeroRespuesta"></p><br></div>
+        </div>
+      </div>
+      <div class="ejercicio3">
+        <div class="elementos">
+          <h1><br>3-- LANZAR LOS DADOS <br></h1>
+          <div class="containerDados">
+            <div><br>
+              <button id="jugador1" onclick="ejercicio3('jugador 1')">
+                Jugador 1 
+              </button>
+              <div><br>
+                <p>Has obtenido:</p>
+                <p id="dado"></p>
+              </div>
+              <div><br>
+                <p>Sumatoria:</p>
+                <p id="sumatoria"></p>
+              </div>
+            </div>
+            <div><br>
+              <button id="jugador2" onclick="ejercicio3('jugador 2')">
+                Jugador 2
+              </button>
+              <div><br>
+                <p>Has obtenido:</p>
+                <p id="dado2"></p>
+              </div>
+              <div><br>
+                <p>Sumatoria:</p>
+                <p id="sumatoria2"></p>
+              </div>
+            </div>
+          </div>
+          <div><br><h2 id="final"></h2><br></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
