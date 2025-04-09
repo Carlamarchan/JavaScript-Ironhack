@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pasajeros del Titanic</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ejercicio">
+        <div class="centrarEjs">
+          <div class="ej">
+            <h2><br />INVENTARIO DEL ZOO</h2>
+            <div>
+              <p id="respuesta1"><br /><b>Inventario inicial del Zoo: </b></p>
+              <br />
+              <fieldset>
+                <legend>&nbsp;Ingresa 2 animales a la lista:</legend>
+                <input type="text" id="addAnimal1" placeholder="Animal 1" />
+                <input type="text" id="addAnimal2" placeholder="Animal 2" />
+                <p id="respuesta2"><b>Nueva Lista: </b></p>
+                <br />
+              </fieldset>
+              <br />
+
+              <fieldset>
+                <legend>&nbsp;Sustituye el tercer animal de la lista:</legend>
+                <input type="text" id="changeAnimal3" placeholder="Animal" />
+                <p id="respuesta3"><b>Nueva Lista: </b></p>
+                <br />
+              </fieldset>
+              <br />
+
+              <fieldset>
+                <legend>&nbsp;Elimina el último de la lista:</legend>
+                <p id="respuesta4"><b>Nueva Lista: </b></p>
+                <br />
+                <p id="respuesta5"><b>Total de animales: </b></p>
+                <br />
+              </fieldset>
+              <br />
+            </div>
+            <button onclick="ejercicio1()">Inventario</button>
+          </div>
+
+          <!-- Ejercicio 2 -->
+
+          <div class="ej">
+            <br />
+            <h2>Ejercicio 2</h2>
+            <h3><br />Listado del Zoo a la inversa</h3>
+            <br />
+            <p id="respuesta6"><b>Lista impresa a la inversa: </b></p>
+            <br />
+            <button onclick="inversa()">Inventario</button>
+          </div>
+
+          <!-- Ejercicio 3 -->
+
+          <div class="ej">
+            <h2><br />PASAJEROS DEL TITANIC</h2>
+            <div>
+              <p id="Titanic1"><br /><b>Lista de pasajeros inicial: </b></p>
+              <br />
+              <fieldset>
+                <legend>
+                  &nbsp;Elimina los 2 últimos pasajeros de la lista:
+                </legend>
+                <p id="Titanic2"><b>Nueva Lista: </b></p>
+                <br />
+              </fieldset>
+
+              <fieldset>
+                <legend>&nbsp;Ingresa 2 pasajeros a la lista:</legend>
+                <input type="text" id="addPasajero1" placeholder="Pasajero 1" />
+                <input type="text" id="addPasajero2" placeholder="Pasajero 2" />
+                <p id="Titanic3"><b>Nueva Lista: </b></p>
+                <br />
+              </fieldset>
+              <br />
+
+              <fieldset>
+                <legend>
+                  &nbsp;Sustituye el segundo pasajero de la lista:
+                </legend>
+                <input
+                  type="text"
+                  id="changePasajero2"
+                  placeholder="Pasajero"
+                />
+                <p id="Titanic4"><b>Lista definitiva de pasajeros: </b></p>
+                <br />
+                <h3 id="Titanic5" style="color: rgb(211, 127, 17)"></h3>
+                <br />
+              </fieldset>
+              <br />
+
+              <br />
+            </div>
+            <button onclick="ejercicio2()">Mostrar pasajeros</button>
+          </div>
+
+          <!-- Ejercicio 2 -->
+
+          <div class="ej">
+            <br />
+            <h2>Ejercicio 4</h2>
+            <h3><br />Aleatorio sobre array</h3>
+            <br />
+            <p id="respuestaAzar"><b> </b></p>
+            <br />
+            <button onclick="ejercicio4()">Premio o castigo?</button>
+          </div>
+
+          <div class="ej"></div>
+          <div class="ej"></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
