@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CATÁLOGO DE MÚSICA</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ejercicio">
+        <div class="centrarEjs">
+          <div class="ej">
+            <h2><br />CATÁLOGO MUSICAL</h2>
+            <br />
+            <div>
+              <!--LISTA DE ARTISTAS -->
+              <fieldset>
+                <legend>&nbsp;Lista de Artistas:</legend>
+                <br />
+                <p id="listaDeArtistas"></p>
+                <br />
+              </fieldset>
+              <!--BUSCAR POR ID -->
+              <fieldset>
+                <legend>&nbsp;Buscar un artista por Id:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="addArtista">Selecciona la posición:</label
+                    ><br />
+                   
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="findById"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    /><br />
+
+                   
+                  </div>
+                  <div class="izquierda">
+                    <p id="nombreArtista"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="buscarArtistaPorId()">BUSCAR ARTISTA</button>
+              </fieldset>
+              <br />
+              <!--BUSCAR POR NOMBRE -->
+              <fieldset>
+                <legend>&nbsp;Buscar un artista por Nombre:</legend>
+                <div class="cont">
+                  <div class="derecha">              
+                    <label for="addArtista2"
+                      >Introduce el nombre del artista:</label
+                    >
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="text"
+                      id="findByName"
+                      placeholder="Ejemplo: Morat"
+                      name=""
+                    />
+                  </div>
+                  <div class="izquierda">
+                    <p id="indiceArtista"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="buscarArtistaPorName()">BUSCAR ARTISTA</button>
+              </fieldset>
+              <br />
+              <!--CREAR -->
+              <fieldset>
+                <legend>&nbsp;Crear un artista nuevo:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="addArtista">Selecciona la posición:</label
+                    ><br />
+                    <label for="addArtista2"
+                      >Introduce el nombre del artista:</label
+                    >
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="addArtista"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    /><br />
+
+                    <input
+                      type="text"
+                      id="addArtistaName"
+                      placeholder="Ejemplo: Morat"
+                      name=""
+                    />
+                  </div>
+                  <div class="izquierda">
+                    <p id="artistaCreado"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="crearArtista()">CREAR ARTISTA</button>
+              </fieldset>
+              <br />
+
+              <!--EDITAR -->
+              <fieldset>
+                <legend>&nbsp;Editar un artista existente:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="addArtista2"
+                      >Introduce la posición del artista:</label
+                    >
+                    <label for="addArtista2"
+                      >Introduce el nombre del artista:</label
+                    >
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="changeArtista"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    />
+                    <input
+                      type="text"
+                      id="changeArtistaName"
+                      placeholder="Ejemplo: Canserbero"
+                      name=""
+                    /><br />
+                  </div>
+                  <div class="izquierda">
+                    <p id="artistaEditado"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="editarArtista()">EDITAR ARTISTA</button>
+              </fieldset>
+              <br />
+
+              <fieldset>
+                <!--ELIMINAR -->
+                <legend>&nbsp;Eliminar un artista existente:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="indiceAEliminar">Selecciona la posición:</label
+                    ><br />
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="eliminarArtista"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    /><br />
+                  </div>
+                  <div class="izquierda">
+                    <p id="artistaEliminado"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="eliminarArtista()">ELIMINAR ARTISTA</button>
+              </fieldset>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
