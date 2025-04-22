@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pop-up</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Ayuda a centrar TODOS los ejercicios -->
+      <div class="ejercicios">
+        <div class="ej1">
+          <h2><br />Ejercicio1</h2>
+          <br />
+          <button onclick="popUp()">Te atreves a dar click?</button>
+          <div id="popUp" style="display: none">
+            <div id="x">x</div>
+          </div>
+        </div>
+        <div class="ej2">
+          <h2><br />Ejercicio2</h2>
+          <br />
+          <div class="contenedorEj2">
+            <label class="switch">
+              <input
+                type="checkbox"
+                id="toggleCajas"
+                onchange="toggleCajas()"
+              />
+              <span class="slider"></span>
+            </label>
+            <div class="cajas">
+              <div class="caja" id="caja1" onclick="pausarCaja(this)"></div>
+              <div class="caja" id="caja2" onclick="pausarCaja(this)"></div>
+              <div class="caja" id="caja3" onclick="pausarCaja(this)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="ej3">
+          <h2><br />Ejercicio3</h2>
+          <br />
+          <div class="semaforoContainer">
+            <div class="circle" id="red"></div>
+            <div class="circle" id="yellow"></div>
+            <div class="circle" id="green"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

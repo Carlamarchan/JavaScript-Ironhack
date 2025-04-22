@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+}
+body {
+  display: flex;
+}
+.container {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(73, 74, 74);
+  width: 60%;
+}
+.ejercicios {
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(73, 74, 74);
+  width: 80%;
+}
+#popUp {
+  display: flex;
+  margin-top: 30px;
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/anuncio.jpg);
+}
+
+#x {
+  color: black;
+  position: absolute;
+  right: 26%;
+  margin-left: 97%;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.contenedorEj2 {
+  justify-content: center;
+}
+.switchContainer {
+  width: 20%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #12ed66;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.cajas {
+  margin-top: 30px;
+  width: 100%;
+}
+.caja {
+  width: 200px;
+  height: 130px;
+  background-image: url(images/caja.png);
+  background-repeat: no-repeat;
+  animation: mover 8s infinite;
+  animation-play-state: paused;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(550px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.ej3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.semaforoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 230px;
+  background-image: url(images/semaforo.png);
+  background-size: cover;
+}
+
+.circle{
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 32px;
+}
