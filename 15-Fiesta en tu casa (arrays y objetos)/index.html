@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>INVITADOS FIESTA</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ejercicio">
+        <div class="centrarEjs">
+          <div class="ej">
+            <h2><br />INVITADOS WEEKEND PARTY!</h2>
+            <br />
+            <div>
+              <!--LISTA DE ARTISTAS -->
+              <fieldset id="listaFielset">
+                <legend>&nbsp;Lista de Invitados:</legend>
+                <br />
+                <div class="containerListas">
+                  <div class="listaArtistas"><p id="listaDeArtistas"></p></div>
+                  <div class="NuevaListaInvitados"><p id="nuevaLista"></p></div>
+                </div>
+
+                <br />
+              </fieldset>
+              <br />
+              <!--CREAR -->
+              <fieldset>
+                <legend>&nbsp;Agregar nuevo invitado:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="addArtista">Selecciona la posición:</label
+                    ><br />
+                    <label for="addArtista2"
+                      >Introduce el nombre del invitado:</label
+                    >
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="addArtista"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    /><br />
+
+                    <input
+                      type="text"
+                      id="addArtistaName"
+                      placeholder="Ejemplo: ANA"
+                      name=""
+                    />
+                  </div>
+                  <div class="izquierda">
+                    <p id="artistaCreado"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="crearArtista()">Agregar Invitad@</button>
+              </fieldset>
+              <br />
+              <!--BUSCAR POR ID -->
+              <fieldset>
+                <legend>&nbsp;Buscar invitado por ID:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="addArtista">Selecciona la posición:</label
+                    ><br />
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="findById"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    /><br />
+                  </div>
+                  <div class="izquierda">
+                    <p id="nombreArtista"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="buscarArtistaPorId()">
+                  Buscar Invitad@ por ID
+                </button>
+              </fieldset>
+              <br />
+              <!--BUSCAR POR NOMBRE -->
+              <fieldset>
+                <legend>&nbsp;Buscar invitado por Nombre:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="addArtista2"
+                      >Introduce el nombre del invitado:</label
+                    >
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="text"
+                      id="findByName"
+                      placeholder="Ejemplo: Carla"
+                      name=""
+                    />
+                  </div>
+                  <div class="izquierda">
+                    <p id="indiceArtista"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="buscarArtistaPorName()">
+                  Buscar Invitad@ por Nombre
+                </button>
+              </fieldset>
+              <br />
+
+              <!--EDITAR -->
+              <fieldset>
+                <legend>&nbsp;Modificar un invitado existente:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="addArtista2"
+                      >Introduce la posición del invitado:</label
+                    >
+                    <label for="addArtista2"
+                      >Introduce el nombre del invitado:</label
+                    >
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="changeArtista"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    />
+                    <input
+                      type="text"
+                      id="changeArtistaName"
+                      placeholder="Ejemplo: Carla"
+                      name=""
+                    /><br />
+                  </div>
+                  <div class="izquierda">
+                    <p id="artistaEditado"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="editarArtista()">Modificar invitad@</button>
+              </fieldset>
+              <br />
+
+              <!--ELIMINAR -->
+              <fieldset>
+                <legend>&nbsp;Eliminar un invitado existente:</legend>
+                <div class="cont">
+                  <div class="derecha">
+                    <label for="indiceAEliminar">Selecciona la posición:</label
+                    ><br />
+                  </div>
+                  <div class="centro">
+                    <input
+                      type="number"
+                      id="eliminarArtista"
+                      placeholder="Ejemplo: 3"
+                      name=""
+                    /><br />
+                  </div>
+                  <div class="izquierda">
+                    <p id="artistaEliminado"></p>
+                  </div>
+                </div>
+
+                <br />
+                <button onclick="eliminarArtista()">Eliminar Invitad@</button>
+              </fieldset>
+              <br />
+
+              <!--CONCAT OTRA LISTA -->
+              <fieldset>
+                <legend>&nbsp;Agregar invitados de la otra fiesta:</legend>
+                <br />
+                <div class="cont">
+                  <button onclick="agregarInvitados()">
+                    Agregar invitados de otra fiesta
+                  </button>
+                  <p id="listaAgregada">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+                <br />
+                <div class="cont">
+                  <button onclick="ordenarLista()">Ordenar nueva lista</button>
+                  <p id="listaNuevaOrdenada">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+              </fieldset>
+
+              <br />
+              <br />
+            </div>
+          </div>
+          <div class="ej">
+            <h2>Ejercicio 2</h2><br>
+            <p id="portatil"></p><br>
+            <p id="portatil2"></p><br>
+            <p id="portatil3"></p><br>
+          </div>
+          <div class="ej">
+            <h2>Ejercicio 3</h2><br>
+            <p id="galleta1"></p><br>
+            <p id="galleta2"></p><br>
+            <p id="galleta3"></p><br>
+            <p id="galleta4"></p><br>
+            <p id="galleta5"></p><br>
+            <p id="galleta6"></p><br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-size: larger;
+}
+h2 {
+  color: aqua;
+}
+.ejercicio {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(13, 60, 61);
+  background-position: right;
+}
+.ej {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: rgba(13, 13, 14, 0.9);
+  width: 100%;
+  border-radius: 20px;
+  margin: auto;
+}
+p {
+  color: white;
+}
+fieldset {
+  text-align: left;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  color: aqua;
+  font-size: 17px;
+}
+.cont {
+  display: flex;
+  margin: auto;
+  color: white;
+  font-size: 15px;
+}
+.derecha {
+  width: 40%;
+}
+.centro {
+  width: 30%;
+}
+.izquierda {
+  width: 30%;
+  border-radius: 10px;
+}
+.containerListas {
+  display: flex;
+}
+.listaArtistas {
+  width: 50%;
+}
+.NuevaListaInvitados {
+  width: 50%;
+}
