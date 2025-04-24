@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  background-color: rgb(80, 21, 107);
+  display: flex;
+  flex-direction: column;
+}
+
+.ejercicio {
+  margin: auto;
+  width: 80%;
+  background-color: rgb(221, 216, 220);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+fieldset {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.ejercicio h2 {
+  text-align: center;
+}
+
+#respuestaEjercicio1 {
+  padding: 30px;
+}
+
+#respuestaEjercicio1PorAtributo {
+  text-align: center;
+}
+
+.ejercicio2Centrar {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.izquierda {
+  width: 30%;
+  margin-left: 150px;
+}
+.derecha {
+  width: 50%;
+}
+input {
+  width: 300px;
+}
+.botonEjercicio2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#respuestaEjercicio2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#respuestaEjercicio3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.domContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  display: flex;
+}
+.dom {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+#circulo{
+    border-radius: 50%;
+    background-color: aliceblue;
+}

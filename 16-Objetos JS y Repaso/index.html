@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Objetos JS y Repaso</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ejercicio">
+        <div>
+          <h2>Ejercicio1 OBJETOS</h2>
+          <div id="respuestaEjercicio1"></div>
+          <fieldset>
+            <legend>
+              &nbsp; <b>Deseas imprimir un atributo específico?</b>&nbsp;
+            </legend>
+            <form id="myForm">
+              Selecciona el atributo:
+              <select id="mySelect">
+                <option value="nombre">Nombre</option>
+                <option value="raza">Raza</option>
+                <option value="edad">Edad</option>
+                <option value="ubicacion">Ubicación</option>
+                <option value="owner">Propietario</option>
+              </select>
+            </form>
+            <br />
+            <button
+              type="submit"
+              id="enviarEjercicio1"
+              onclick="imprimirAtributoSeleccionado()"
+            >
+              Enviar
+            </button>
+          </fieldset>
+          <br />
+
+          <div id="respuestaEjercicio1PorAtributo"></div>
+        </div>
+      </div>
+      <div class="ejercicio">
+        <h2>Ejercicio2 FUNCIONES</h2>
+        <br />
+        <div class="ejercicio2Centrar">
+          <div class="izquierda">
+            <label>Introduce la frase</label><br />
+            <label>Introduce la palabra a buscar</label><br />
+          </div>
+
+          <div class="derecha">
+            <input type="text" name="frase" id="frase" /><br />
+            <input type="text" name="palabra" id="palabra" />
+          </div>
+        </div>
+        <div class="botonEjercicio2">
+          <button type="submit" id="buscarPalabra" onclick="buscarPalabra()">
+            Buscar
+          </button>
+        </div>
+        <div id="respuestaEjercicio2"></div>
+      </div>
+      <div class="ejercicio">
+        <h2>Ejercicio3 ARRAYS</h2>
+        <br />
+        <div class="ejercicio2Centrar">
+          <div class="izquierda">
+            <label>Qué tabla de multiplicar deseas?</label><br />
+          </div>
+          <div class="derecha">
+            <input type="number" name="numero" id="tablaDeMultiplicar" /><br />
+          </div>
+        </div>
+        <div class="botonEjercicio2">
+          <button onclick="multiplicar()">Generar Tabla</button>
+        </div>
+        <div id="respuestaEjercicio3"></div>
+      </div>
+
+      <div class="ejercicio">
+        <h2>Ejercicio4 DOM</h2>
+        <br />
+        <div class="ejercicio2Centrar">
+          <div class="domContainer">
+            <div class="dom" id="texto"><b>Aquí el texto</b></div>
+            <div class="dom" id="fondo"></div>
+            <div class="dom" id="circulo"></div>
+          </div>
+        </div>
+        <div class="botonEjercicio2">
+          <button onclick="colorear()">Pintar Random</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
