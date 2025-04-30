@@ -1,0 +1,262 @@
+body{
+    margin: 0px;
+}
+
+.imagen-cabecera{     /* Imagen de la cabecera */
+    background-image: url(images/musica.jpeg);
+    width: 100%;
+    height: 250px;
+    background-position: center;
+  }
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    color:rgb(131, 23, 23);
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+
+.mainContainer{      /*Contenedor de toda la página web excepto la imagen de cabecera*/
+    width: 80%;
+    margin: auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+ul {                  /*Color al backgroud del menú principal*/
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #dddddd;
+    padding: 8px;
+  }
+
+.imagen-audio{      /* Imagen del libro */
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .espacio{
+    width: 5%;
+  }
+
+  p{    
+    font-size: 20px;
+    text-align: justify;
+  }
+
+
+.listaCanciones{       /* lista de mejores canciones */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5px;
+  }
+
+.mejoresCanciones{     /*Estilo de texto "mejores canciones" */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(131, 23, 23);
+    font-size: 23px;
+  }
+
+.listaCanciones div{
+    border: rgb(255, 255, 255) 3px solid;
+    background-color: #dddddd;;
+  }
+
+ ol li{
+    line-height: 30px;
+  }
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: medium;
+  }
+
+a:hover{
+    font-size: 120%;
+    color: rgb(131, 23, 23);
+}
+
+.imagen-bruno{            /*Formato para la imagen cabecera de la página BrunoMars*/
+    background-image: url(images/brunoMars.jpeg);
+    width: 100%;
+    height: 363px;
+    background-position: top;
+}
+
+.listaPorArtista{          /*página principal (3 divisiones al final)*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 30px;
+}
+
+.imagen-dragons{            /*Formato para la imagen cabecera de la página ImagineDragons*/
+    background-image: url(images/imagineDragons.jpeg);
+    width: 100%;
+    height: 363px;
+    background-position: bottom;
+}
+
+.imagen-teddy{              /*Formato para la imagen cabecera de la página Teddy Swims*/
+    background-image: url(images/teddy.jpeg);
+    width: 100%;
+    height: 363px;
+    background-position: top;
+}
+
+header{
+  background-color: rgb(131, 23, 23);
+  padding: 15px;
+}
+
+section {
+  background-color: rgb(189, 142, 142);
+  padding: 10px;
+  margin: 8px;
+  text-align: justify;
+  line-height: 35px;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gridBruno{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 5px;
+  line-height: 30px;
+}
+
+.grid2 ul li{
+  margin-top: 70px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.listaPorArtista div{
+  border: rgb(255, 255, 255) 3px solid;
+  background-color: #dddddd;;
+}
+.gridBruno div ul{
+  margin-top: 8px;
+}
+.ImagineDragonsContainer{
+  background-color: rgb(131, 23, 23);
+  padding: 10px;
+  display: flex;
+}
+.ImagineDragonsSongs{
+  display: flex;
+  width: 50%;
+}
+.ImagineDragonsInfo{
+
+  width: 50%;
+}
+.ImagineDragonsSongs div{
+  background-color: #dddddd;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+.teddyContainer{
+  background-color: rgb(131, 23, 23);
+  padding: 10px;
+}
+.teddyContainer h2{
+  color: #dddddd;
+  text-align: center;
+}
+
+.teddyMejoresCanciones{
+  font-size: 17px;
+  display: flex;
+}
+.teddyMejoresCanciones div{
+  background-color: #dddddd;
+  width: 33.3%;
+  text-align: center;
+  margin: 5px;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+  background-color: #dddddd;
+}
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table {
+  width: 100%;
+}
+
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 10px solid rgb(131, 23, 23);
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.AlbumesTeddyTabla td img{
+  width: 60%;
+  margin-left: 21%;
+}
+
+.table{
+  width: 70%;
+  padding-left: 15%;
+}
+
+.encabezado{
+  text-align: center;
+}
+
+.encabezado td{
+  font-weight:bold;
+  text-align: center;
+}
+
+#tituloTabla{
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 21px;
+}
+.texto{
+    width: 40%;
+}
+
+.oculto{
+    position: relative;
+    left:-1000px;
+}
